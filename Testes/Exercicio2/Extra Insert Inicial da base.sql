@@ -1,7 +1,4 @@
-﻿create procedure insereDadosIniciais
-as
-begin
-SET IDENTITY_INSERT Condominio on
+﻿SET IDENTITY_INSERT Condominio on
 
 insert into Condominio (Id,Nome,Bairro)
 	values 
@@ -23,7 +20,7 @@ insert into Familia (Id,Nome,Id_Condominio,Apartamento)
 (7,'Camargo',3,301),
 (8,'Brito',5,507),
 (9,'Oliveira',3,530),
-(10,'Jovanelli',1,507)
+(10,'Jovanelli',4,507)
 
 SET IDENTITY_INSERT Familia OFF
 DBCC CHECKIDENT (Familia, reseed, 10)
@@ -40,11 +37,9 @@ values
 (23,8,'Fabiana',3),
 (24,8,'Marcio',0),
 (25,7,'Roberto',1),
-(26,9,'Marcos',1),
+(26,9,'Marcos',4),
 (27,4,'Rafael',3),
 (28,10,'Bruna',1)
 
 SET IDENTITY_INSERT Morador OFF
 DBCC CHECKIDENT (Condominio, reseed, 28)
-
-end

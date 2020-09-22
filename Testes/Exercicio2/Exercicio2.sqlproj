@@ -60,4 +60,7 @@
   <ItemGroup>
     <Build Include="BichosDeEstimacaoPorBairro.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Extra Insert Inicial da base.sql" />
+  </ItemGroup>
 </Project>
